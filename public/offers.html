@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Offers | StayFinder</title>
+
+    <link rel="stylesheet" href="css/offers.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1>StayFinder</h1>
+
+        <div class="nav-links">
+            <a href="offers.html">Offers</a>
+            <a href="#deals">Deals</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h2>Exclusive Hotel Deals & Offers</h2>
+
+            <p>
+                Discover amazing hotel deals and save more
+                on your next vacation.
+            </p>
+
+            <a href="#deals" class="hero-btn">
+                Explore Offers
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers-section" id="deals">
+
+        <h2>Special Offers</h2>
+
+        <p class="subtitle">
+            Enjoy exclusive discounts on your favourite hotels.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="filters">
+
+            <button onclick="filterOffers('all')">All Offers</button>
+
+            <button onclick="filterOffers('weekend')">Weekend</button>
+
+            <button onclick="filterOffers('festival')">Festival</button>
+
+            <button onclick="filterOffers('couple')">Couple</button>
+
+        </div>
+
+        <!-- Offers Container -->
+        <div class="offers-container" id="offers-container">
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <h3>StayFinder</h3>
+
+        <p>Find your perfect stay at the best prices.</p>
+
+        <p>© 2026 StayFinder. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="js/offers.js"></script>
+
+</body>
+
+</html>
