@@ -139,23 +139,22 @@ function filterOffers(category) {
 // Claim Offer
 
 function claimOffer(id) {
-
     const selectedOffer = offers.find(
         offer => offer.id === id
     );
 
-    if (selectedOffer) {
-
-        alert(
-            "Congratulations!\n\nYou selected: " +
-            selectedOffer.hotel +
-            "\nDiscount: " +
-            selectedOffer.discount +
-            "\nOffer Price: ₹" +
-            selectedOffer.newPrice
-        );
-
+    if (!selectedOffer) {
+        alert("Sorry! This offer is no longer available.");
+        return;
     }
+
+    alert(
+        "Congratulations!\n\n" +
+        "Hotel: " + selectedOffer.hotel +
+        "\nDiscount: " + selectedOffer.discount +
+        "\nPrice: ₹" + selectedOffer.newPrice
+    );
+} 
 
 }
 
